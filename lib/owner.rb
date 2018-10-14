@@ -74,16 +74,22 @@ class Owner
   end
 
   def sell_pets
-    pets[:dogs].each do |instance|
-      instance.mood = 'nervous'      
-    end
+    # pets[:dogs].each do |instance|
+    #   instance.mood = 'nervous'      
+    # end
 
-    pets[:cats].each do |instance|
-      instance.mood = 'nervous'      
-    end
+    # pets[:cats].each do |instance|
+    #   instance.mood = 'nervous'      
+    # end
 
-    pets[:fishes].each do |instance|
-      instance.mood = 'nervous'      
+    # pets[:fishes].each do |instance|
+    #   instance.mood = 'nervous'      
+    # end
+
+    pets.each do |k, v|
+      v.each do |animal|
+        binding.pry
+      end
     end
 
     pets.clear
